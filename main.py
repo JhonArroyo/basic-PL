@@ -19,29 +19,33 @@ while True:
     if (Text == "kill()"):
         b = kill()
     if (Text == "add()"):
-        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', Text)]
+        _Text = input("add()>>")
+        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', _Text)]
         _valx = add_list[0]
         _valy = add_list[1]
         c = add(_valx, _valy)
     if (Text == "subAdd()"):
-        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', Text)]
+        _Text = input("subAdd()>>")
+        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', _Text)]
         _valx = add_list[0]
         _valy = add_list[1]
         d = subAdd(_valx, _valy)
     if (Text == "quad()"):
-        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', Text)]
+        _Text = input("quad()>>")
+        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', _Text)]
         _valx = add_list[0]
         _valy = add_list[1]
         e = quad(_valx, _valy)
     if (Text == "div()"):
-        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', Text)]
+        _Text = input("div()>>")
+        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', _Text)]
         _valx = add_list[0]
         _valy = add_list[1]
         f = div(_valx, _valy)
     if (Text == "quadMax()"):
-        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', Text)]
+        _Text = input("quadMax()>>")
+        add_list= [float(s) for s in re.findall(r'-?\d+\.?\d*', _Text)]
         _valx = add_list[0]
         _valy = add_list[1]
         g = quadMax(_valx, _valy)                             
-
-
+    
